@@ -20,6 +20,11 @@ namespace Assignment.Business
             _fileService = fileService;
         }
 
+        /// <summary>
+        /// Get Files By ProjectId
+        /// </summary>
+        /// <param name="projectId"></param>
+        /// <returns></returns>
         public List<File> GetFilesByProjectId(int projectId)
         {
             return _fileService.GetFilesByProjectId(projectId).ToList();

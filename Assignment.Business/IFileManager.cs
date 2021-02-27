@@ -9,6 +9,11 @@ namespace Assignment.Business
 {
     public interface IFileManager
     {
+        /// <summary>
+        /// Get Files By ProjectId
+        /// </summary>
+        /// <param name="projectId"></param>
+        /// <returns></returns>
         List<File> GetFilesByProjectId(int projectId);
     }
 }

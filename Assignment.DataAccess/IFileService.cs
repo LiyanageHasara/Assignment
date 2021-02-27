@@ -9,6 +9,11 @@ namespace Assignment.DataAccess
 {
     public interface IFileService
     {
+        /// <summary>
+        /// Get Files By ProjectId
+        /// </summary>
+        /// <param name="projectId"></param>
+        /// <returns></returns>
         IList<File> GetFilesByProjectId(int projectId);
     }
 }
